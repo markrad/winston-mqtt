@@ -1,0 +1,32 @@
+{
+  "name": "winston-mqtt",
+  "version": "1.0.0",
+  "description": "Winston MQTT transport ",
+  "main": "lib/winston-mqtt-transport.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dstil/winston-mqtt.git"
+  },
+  "keywords": [
+    "winston",
+    "mqtt",
+    "logging",
+    "transport",
+    "log",
+    "logger",
+    "mosquitto"
+  ],
+  "author": "DSTIL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dstil/winston-mqtt/issues"
+  },
+  "homepage": "https://github.com/dstil/winston-mqtt#readme",
+  "dependencies": {
+    "mqtt": "^2.0.1",
+    "winston": "^2.2.0"
+  }
+}
