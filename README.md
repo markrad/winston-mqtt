@@ -16,7 +16,15 @@ npm install winston-mqtt --save
  */
 require('winston-mqtt').MqttTransport;
 
-winston.add(winston.transports.MqttTransport, { name: 'source-name', topic: 'mqtt-topic', host: 'mqtt://localhost:1883' });
+winston.add(winston.transports.MqttTransport, {
+   name: 'source-name',
+   topic: 'mqtt-topic',
+   host: 'mqtt://localhost:1883',
+   requestTracer: {
+     instance: myRequestObject,
+     property: 'requestId'
+   }
+});
 ```
 The MqttTransport takes the following options. 'name' and 'topic' is required:
 * __name:__ Transport instance identifier. This will be embeded into the JSON data logged to the MQTT topic.
@@ -24,3 +32,5 @@ The MqttTransport takes the following options. 'name' and 'topic' is required:
 * __level:__ Level of messages that this transport should log, defaults to
 'info'.
 * __host:__ The MQTT host address, defaults to: `mqtt://localhost:1883`
+* __requestTracer.instance:__ If you want to trace a specific request using the continuation-local-storage module
+* __requestTracer.property:__ Property of the request id in your object
