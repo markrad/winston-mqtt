@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dstil/winston-mqtt.git"
+    "url": "git+https://github.com/olivierodo/winston-mqtt.git"
   },
   "keywords": [
     "winston",
@@ -19,12 +19,12 @@
     "logger",
     "mosquitto"
   ],
-  "author": "DSTIL",
+  "author": "Olivierodo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dstil/winston-mqtt/issues"
+    "url": "https://github.com/olivierodo/winston-mqtt/issues"
   },
-  "homepage": "https://github.com/dstil/winston-mqtt#readme",
+  "homepage": "https://github.com/olivierodo/winston-mqtt#readme",
   "dependencies": {
     "mqtt": "^2.0.1",
     "winston": "^2.2.0"
